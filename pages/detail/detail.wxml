@@ -1,0 +1,21 @@
+<view class='detailcontainer'>
+  <image class='headimg' src='{{detailobj.detail_img}}'></image>
+  <view class='avatar_data'>
+    <image src='{{detailobj.avatar}}'></image>
+    <text>{{detailobj.author}}</text>
+    <text>发布于</text>
+    <text>{{detailobj.date}}</text>
+  </view>
+  <text class='company'>{{detailobj.title}}</text>
+
+  <view class='collection_share_container'>
+     <view class='collection_share'>
+      <image catchtap='handlecollection' wx:if='{{!isCollected}}' src='/images/icon/collection-anti.png'></image>
+       <image  catchtap='handlecollection' wx:if='{{isCollected}}'  src='/images/icon/collection.png'></image>
+      <image catchtap='handleShare' src='/images/icon/share.png'></image>
+     </view>
+       <view class='line'></view>
+  </view>
+   <button open-type='share'>转发此文章</button>
+      <text class='content'>{{detailobj.detail_content}}</text>
+</view>

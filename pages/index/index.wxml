@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view class="indexContainer">
+<image class='avatar' src='/images/index/m.jpg'></image>
+<text class='userName'>hello {{msg}}</text>
+<view catchtap='handleClick' class='gostudy'>
+<text>开启小程序之旅</text></view>
+</view>
